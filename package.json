@@ -33,8 +33,6 @@
     "moleculer": "^0.13.9"
   },
   "dependencies": {
-    "bcrypt": "^3.0.6",
-    "imicros-auth": "^0.0.6",
     "ioredis": "^4.10.0",
     "lodash": "^4.17.11"
   }
