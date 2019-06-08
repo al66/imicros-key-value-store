@@ -1,14 +1,14 @@
 {
   "name": "imicros-key-value-store",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Andreas Leinen <andreas.leinen@imicros.de> (www.imicros.de)",
   "license": "MIT",
   "description": "Moleculer service for key value store based on Redis database (with authentification and authorization by imicros-auth) ",
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --ext .js,.jsx",
-    "test-store": "jest test/store.spec.js --no-cache",
-    "test": "jest --coverage --no-cache"
+    "test": "jest --coverage --no-cache",
+    "test-local": "jest --coverage --no-cache --config=local.js"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -28,15 +28,14 @@
     "store"
   ],
   "devDependencies": {
-    "coveralls": "^3.0.1",
-    "eslint": "^4.19.1",
-    "ioredis-mock": "^3.10.1",
-    "jest": "^22.4.3",
-    "moleculer": "^0.12.3",
-    "nats": "^0.8.10"
+    "coveralls": "^3.0.4",
+    "jest": "^24.8.0",
+    "moleculer": "^0.13.9"
   },
   "dependencies": {
-    "imicros-auth": "^0.0.4",
-    "ioredis": "^3.2.2"
+    "bcrypt": "^3.0.6",
+    "imicros-auth": "^0.0.6",
+    "ioredis": "^4.10.0",
+    "lodash": "^4.17.11"
   }
 }

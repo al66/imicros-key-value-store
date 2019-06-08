@@ -4,5 +4,6 @@
 "use strict";
 
 module.exports = {
-    Store: require("./lib/store")
+    Store: require("./lib/store"),
+    Mixin: require("./lib/store.mixin")
 };
