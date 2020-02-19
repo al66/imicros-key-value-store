@@ -73,9 +73,7 @@ describe("Test store service", () => {
                 meta: { 
                     acl: {
                         accessToken: "this is the access token",
-                        owner: {
-                            id: `g1-${timestamp}`
-                        }
+                        ownerId: `g1-${timestamp}`
                     }, 
                     user: { 
                         id: `1-${timestamp}` , 
@@ -103,7 +101,7 @@ describe("Test store service", () => {
         });
         
         it("it should set 1. key 2. owner", () => {
-            opts.meta.acl.owner.id = `g2-${timestamp}`;
+            opts.meta.acl.ownerId = `g2-${timestamp}`;
             let key = `res1-${timestamp}`;
             let params = {
                 key: key,
@@ -155,7 +153,7 @@ describe("Test store service", () => {
         });
         
         it("it should get 1. key 2. owner", async () => {
-            opts.meta.acl.owner.id = `g2-${timestamp}`;
+            opts.meta.acl.ownerId = `g2-${timestamp}`;
             let key = `res1-${timestamp}`;
             let params = {
                 key: key
@@ -200,9 +198,7 @@ describe("Test store service", () => {
                 meta: { 
                     acl: {
                         accessToken: "this is the access token",
-                        owner: {
-                            id: `g1-${timestamp}`
-                        }
+                        ownerId: `g1-${timestamp}`
                     }, 
                     user: { 
                         id: `1-${timestamp}` , 
@@ -231,7 +227,7 @@ describe("Test store service", () => {
             opts = { 
                 meta: { 
                     acl: {
-                        service: "admin"
+                        ownerId: "admin"
                     }, 
                     user: { 
                         id: `1-${timestamp}` , 

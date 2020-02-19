@@ -13,7 +13,7 @@ const Keys = {
         getOek: {
             handler(ctx) {
                 if (!ctx.params || !ctx.params.service) throw new Error("Missing service name");
-                if (!ctx.meta || !ctx.meta.acl.owner.id) {
+                if (!ctx.meta || !ctx.meta.acl.ownerId) {
                     return {
                         id: "service",
                         key: "serviceSecret"
@@ -106,9 +106,7 @@ describe("Test store service", () => {
                 meta: { 
                     acl: {
                         accessToken: "this is the access token",
-                        owner: {
-                            id: `g1-${timestamp}`
-                        }
+                        ownerId: `g1-${timestamp}`
                     }, 
                     user: { 
                         id: `1-${timestamp}` , 
