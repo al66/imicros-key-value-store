@@ -1,5 +1,5 @@
 {
-  "name": "imicros-key-value-store",
+  "name": "imicros-store",
   "version": "0.0.2",
   "author": "Andreas Leinen <andreas.leinen@imicros.de> (www.imicros.de)",
   "license": "MIT",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/al66/imicros-key-value-store.git"
+    "url": "git+https://github.com/al66/imicros-store.git"
   },
   "keywords": [
     "imicros",
@@ -28,12 +28,12 @@
     "store"
   ],
   "devDependencies": {
-    "coveralls": "^3.0.4",
-    "jest": "^24.8.0",
-    "moleculer": "^0.13.9"
+    "coveralls": "^3.0.9",
+    "jest": "^24.9.0",
+    "moleculer": "^0.13.13"
   },
   "dependencies": {
-    "ioredis": "^4.10.0",
-    "lodash": "^4.17.11"
+    "ioredis": "^4.16.0",
+    "lodash": "^4.17.15"
   }
 }
