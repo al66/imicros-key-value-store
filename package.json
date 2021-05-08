@@ -35,6 +35,6 @@
   "dependencies": {
     "imicros-acl": "0.0.4",
     "ioredis": "^4.16.0",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.21"
   }
 }
